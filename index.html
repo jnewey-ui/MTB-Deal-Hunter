@@ -1,81 +1,40 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Find mountain bike gear deals from South African cycling stores. Compare prices and spot savings.">
-<title>MTB Deal Hunter | South African MTB Deals</title>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="South African mountain bike gear listings with retailer links and searchable filters.">
+<title>MTB Deal Hunter | South Africa</title>
 <style>
-:root{--bg:#101310;--panel:#191e19;--panel2:#202720;--line:#303a30;--text:#f2f5ef;--muted:#a3ada0;--lime:#c4f05b;--lime2:#a6d83d}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
-header{border-bottom:1px solid var(--line);background:#141914}
-.nav{max-width:1180px;margin:auto;padding:20px 24px;display:flex;align-items:center;justify-content:space-between}
-.brand{display:flex;gap:12px;align-items:center;font-weight:850;letter-spacing:-.6px;font-size:20px}.mark{width:38px;height:38px;border-radius:11px;background:var(--lime);color:#17200d;display:grid;place-items:center;font-weight:950;font-size:20px}
-.nav small{color:var(--muted);font-size:12px;letter-spacing:1.3px;text-transform:uppercase}
-main{max-width:1180px;margin:auto;padding:48px 24px 70px}
-.eyebrow{color:var(--lime);font-size:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase}
-h1{font-size:clamp(38px,6vw,64px);line-height:1.02;letter-spacing:-2.7px;margin:13px 0 14px;max-width:760px}
-h1 span{color:var(--lime)}.intro{color:var(--muted);font-size:16px;line-height:1.65;max-width:620px;margin:0 0 34px}
-.filters{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:22px;margin:30px 0 36px;display:grid;grid-template-columns:repeat(3,1fr) auto;gap:14px;align-items:end}
-label{display:block;color:var(--muted);font-size:12px;font-weight:750;margin:0 0 8px}
-select{width:100%;background:#101510;border:1px solid #3a4538;border-radius:9px;color:var(--text);padding:13px 12px;font:inherit;outline:none}
-select:focus{border-color:var(--lime)}
-button{border:0;border-radius:9px;padding:14px 20px;background:var(--lime);color:#18200e;font-weight:850;font:inherit;cursor:pointer}
-button:hover{background:var(--lime2)}
-.sectionhead{display:flex;justify-content:space-between;align-items:end;margin-bottom:17px;gap:15px}
-h2{font-size:24px;letter-spacing:-.7px;margin:0}.sectionhead p{color:var(--muted);font-size:13px;margin:5px 0 0}
-.note{color:var(--muted);font-size:11px;border:1px solid var(--line);border-radius:30px;padding:7px 11px;white-space:nowrap}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
-.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden;transition:transform .2s,border-color .2s}
-.card:hover{transform:translateY(-3px);border-color:#637b3d}
-.product-art{height:170px;background:linear-gradient(135deg,#252e23,#151b15);display:grid;place-items:center;position:relative;color:#718067;font-size:54px}
-.tag{position:absolute;top:13px;left:13px;background:var(--lime);color:#17200d;font-weight:900;font-size:11px;padding:7px 9px;border-radius:6px}
-.cardbody{padding:17px}.store{color:var(--lime);font-size:11px;font-weight:850;letter-spacing:1px;text-transform:uppercase}
-.card h3{font-size:17px;margin:8px 0 14px;min-height:42px;line-height:1.3}
-.prices{display:flex;align-items:baseline;gap:9px}.now{font-size:23px;font-weight:900}.was{color:#879184;text-decoration:line-through;font-size:13px}
-.saving{color:var(--lime);font-size:12px;font-weight:800;margin-top:5px}
-.card a{display:block;margin-top:17px;color:var(--text);text-decoration:none;border-top:1px solid var(--line);padding-top:13px;font-size:13px;font-weight:750}
-.empty{display:none;color:var(--muted);padding:30px;text-align:center;border:1px dashed var(--line);border-radius:12px}
-footer{border-top:1px solid var(--line);color:var(--muted);font-size:12px;padding:23px 24px;text-align:center}
-@media(max-width:850px){.filters{grid-template-columns:1fr 1fr}.grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:560px){main{padding:34px 16px 50px}.nav{padding:16px}.filters{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.sectionhead{align-items:start;flex-direction:column}.note{white-space:normal}}
-</style>
-</head>
+:root{color-scheme:dark;--bg:#101410;--panel:#1b221b;--line:#354033;--text:#f3f5ef;--muted:#aab4a5;--lime:#c5ef5a}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,Segoe UI,sans-serif}
+header{border-bottom:1px solid var(--line);background:#151b15}.nav,main{max-width:1120px;margin:auto;padding:22px}
+.nav{display:flex;justify-content:space-between;align-items:center;gap:12px}.logo{font-weight:900;letter-spacing:.5px}.logo b{background:var(--lime);color:#17200d;padding:8px 11px;border-radius:9px;margin-right:9px}.nav small{color:var(--muted)}
+.hero{padding:45px 0 24px}.eyebrow{color:var(--lime);font-size:12px;font-weight:850;letter-spacing:2px;text-transform:uppercase}h1{font-size:clamp(38px,7vw,66px);line-height:1.02;letter-spacing:-2px;margin:12px 0}h1 span{color:var(--lime)}.intro{color:var(--muted);max-width:650px;line-height:1.7}
+.filters{display:grid;grid-template-columns:repeat(3,1fr) auto;gap:13px;padding:20px;background:var(--panel);border:1px solid var(--line);border-radius:15px;margin:25px 0 34px}
+label{display:block;color:var(--muted);font-size:11px;font-weight:800;margin-bottom:7px}select,button{width:100%;padding:13px;border-radius:9px;font:inherit}select{background:#111711;color:var(--text);border:1px solid #46513f}button{border:0;background:var(--lime);color:#17200d;font-weight:900;cursor:pointer}
+.head{display:flex;justify-content:space-between;align-items:end;gap:12px;margin-bottom:16px}h2{margin:0;font-size:24px}.head p,.subnote{color:var(--muted);font-size:12px}.subnote{border:1px solid var(--line);padding:7px 10px;border-radius:30px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden}.visual{height:165px;display:grid;place-items:center;background:radial-gradient(circle at 50% 35%,#39472d,#1b241b 68%);font-size:50px}.body{padding:17px}.store{color:var(--lime);font-size:11px;font-weight:900;letter-spacing:1px;text-transform:uppercase}.card h3{font-size:18px;min-height:46px;margin:8px 0}.price{font-size:24px;font-weight:900}.kind{font-size:12px;color:var(--muted);margin-top:4px}.link{display:block;margin-top:17px;padding-top:13px;border-top:1px solid var(--line);color:var(--lime);text-decoration:none;font-weight:800;font-size:13px}.empty{display:none;padding:28px;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:12px}footer{border-top:1px solid var(--line);padding:24px;text-align:center;color:var(--muted);font-size:12px;margin-top:55px}
+@media(max-width:760px){.filters{grid-template-columns:1fr 1fr}.grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:540px){.nav{align-items:flex-start;flex-direction:column}.filters,.grid{grid-template-columns:1fr}.head{align-items:flex-start;flex-direction:column}main{padding:16px}}
+</style></head>
 <body>
-<header><div class="nav"><div class="brand"><div class="mark">M</div>MTB DEAL HUNTER</div><small>South Africa · Ride more. Spend less.</small></div></header>
+<header><div class="nav"><div class="logo"><b>M</b>MTB DEAL HUNTER</div><small>South Africa · Ride more. Spend wisely.</small></div></header>
 <main>
-<div class="eyebrow">The hunt starts here</div>
-<h1>Big rides. <span>Better deals.</span></h1>
-<p class="intro">Find mountain bike gear deals from South African cycling stores. Filter by store, category and brand to discover your next upgrade.</p>
-<section class="filters" aria-label="Deal filters">
-<div><label for="store">STORE</label><select id="store"><option value="all">All stores</option><option>Cycle Lab</option><option>Fox Racing</option><option>CWC</option><option>MTB Direct</option><option>Bike Addict</option></select></div>
-<div><label for="category">CATEGORY</label><select id="category"><option value="all">All gear</option><option>Helmets</option><option>Gloves</option><option>Jerseys</option><option>Bikes</option><option>Components</option></select></div>
-<div><label for="brand">BRAND</label><select id="brand"><option value="all">All brands</option><option>Fox</option><option>Bell</option><option>Giant</option><option>Shimano</option><option>Five Ten</option></select></div>
-<button id="apply">Find deals ↗</button>
+<section class="hero"><div class="eyebrow">South African MTB gear finder</div><h1>Big rides.<br><span>Better finds.</span></h1><p class="intro">Browse mountain-bike gear listings from South African retailers. Filter by store, category or brand, then open the retailer's page to confirm the latest price, sizes and availability.</p></section>
+<section class="filters" aria-label="Filters">
+<div><label for="store">STORE</label><select id="store"><option value="all">All stores</option><option value="Bike Addict">Bike Addict</option><option value="Disfruta Sports">Disfruta Sports</option></select></div>
+<div><label for="category">CATEGORY</label><select id="category"><option value="all">All categories</option><option value="Helmets">Helmets</option><option value="Gloves">Gloves</option></select></div>
+<div><label for="brand">BRAND</label><select id="brand"><option value="all">All brands</option><option value="FOX">FOX</option></select></div>
+<button id="apply">Find gear ↗</button>
 </section>
-<div class="sectionhead"><div><h2>Deals worth checking out</h2><p id="count">A few example listings to show how the site will work.</p></div><div class="note">EXAMPLE LISTINGS · NOT LIVE PRICES</div></div>
-<div class="grid" id="grid">
-<article class="card" data-store="Fox Racing" data-category="Helmets" data-brand="Fox"><div class="product-art"><span class="tag">-25%</span>⛑</div><div class="cardbody"><div class="store">Fox Racing</div><h3>Fox Rampage Full-Face Helmet</h3><div class="prices"><span class="now">R 3,499</span><span class="was">R 4,699</span></div><div class="saving">Save R 1,200</div><a href="#" class="demo">View deal ↗</a></div></article>
-<article class="card" data-store="Cycle Lab" data-category="Gloves" data-brand="Fox"><div class="product-art"><span class="tag">-20%</span>🧤</div><div class="cardbody"><div class="store">Cycle Lab</div><h3>Fox MTB Ranger Gloves</h3><div class="prices"><span class="now">R 799</span><span class="was">R 999</span></div><div class="saving">Save R 200</div><a href="#" class="demo">View deal ↗</a></div></article>
-<article class="card" data-store="CWC" data-category="Components" data-brand="Shimano"><div class="product-art"><span class="tag">-18%</span>⚙</div><div class="cardbody"><div class="store">CWC</div><h3>Shimano Deore Brake Set</h3><div class="prices"><span class="now">R 2,049</span><span class="was">R 2,499</span></div><div class="saving">Save R 450</div><a href="#" class="demo">View deal ↗</a></div></article>
-<article class="card" data-store="MTB Direct" data-category="Jerseys" data-brand="Fox"><div class="product-art"><span class="tag">-30%</span>👕</div><div class="cardbody"><div class="store">MTB Direct</div><h3>Fox Flexair MTB Jersey</h3><div class="prices"><span class="now">R 1,049</span><span class="was">R 1,499</span></div><div class="saving">Save R 450</div><a href="#" class="demo">View deal ↗</a></div></article>
-<article class="card" data-store="Bike Addict" data-category="Bikes" data-brand="Giant"><div class="product-art"><span class="tag">-15%</span>🚵</div><div class="cardbody"><div class="store">Bike Addict</div><h3>Giant Talon Mountain Bike</h3><div class="prices"><span class="now">R 12,749</span><span class="was">R 14,999</span></div><div class="saving">Save R 2,250</div><a href="#" class="demo">View deal ↗</a></div></article>
-<article class="card" data-store="Cycle Lab" data-category="Components" data-brand="Five  Ten"><div class="product-art"><span class="tag">-22%</span>🚲</div><div class="cardbody"><div class="store">Cycle Lab</div><h3>Five Ten Freerider Shoes</h3><div class="prices"><span class="now">R 1,399</span><span class="was">R 1,799</span></div><div class="saving">Save R 400</div><a href="#" class="demo">View deal ↗</a></div></article>
-</div>
-<div class="empty" id="empty">No example deals match those filters. Try another selection.</div>
-</main>
-<footer>MTB Deal Hunter · Built for South African riders · Prices shown are illustrative examples.</footer>
+<div class="head"><div><h2>Retailer listings</h2><p id="count">3 listings with retailer links · checked 2 November 2026</p></div><div class="subnote">PRICES MAY CHANGE</div></div>
+<section class="grid" id="grid">
+<article class="card" data-store="Bike Addict" data-category="Helmets" data-brand="FOX"><div class="visual" aria-label="Helmet icon">⛑️</div><div class="body"><div class="store">Bike Addict</div><h3>FOX Rampage Helmet</h3><div class="price">R 4,650</div><div class="kind">Listed price · helmet</div><a class="link" href="https://bike-addict.co.za/collections/fox-helmets/products/fox-rampage-helmet" target="_blank" rel="noopener">Check product at Bike Addict ↗</a></div></article>
+<article class="card" data-store="Bike Addict" data-category="Helmets" data-brand="FOX"><div class="visual" aria-label="Helmet icon">⛑️</div><div class="body"><div class="store">Bike Addict</div><h3>FOX Rampage Foundry Helmet</h3><div class="price">R 4,850</div><div class="kind">Listed price · helmet</div><a class="link" href="https://bike-addict.co.za/collections/fox-helmets/products/fox-rampage-foundry-helmet" target="_blank" rel="noopener">Check product at Bike Addict ↗</a></div></article>
+<article class="card" data-store="Disfruta Sports" data-category="Gloves" data-brand="FOX"><div class="visual" aria-label="Mountain bike gloves icon">🧤</div><div class="body"><div class="store">Disfruta Sports</div><h3>FOX Ranger MTB Gloves</h3><div class="price">R 449</div><div class="kind">Listed price · gloves</div><a class="link" href="https://disfrutastore.co.za/products/fox-ranger-mtb-gloves" target="_blank" rel="noopener">Check product at Disfruta ↗</a></div></article>
+</section><div class="empty" id="empty">No listings match those filters. Try another selection.</div>
+<p class="intro" style="font-size:12px;margin-top:25px">Prices were found on retailer pages during the latest update. They are not guaranteed live stock or checkout prices; confirm size, availability, delivery and final price with the shop. Listings are not automatically synced.</p>
+</main><footer>MTB Deal Hunter · Independent retailer listings · Always confirm details with the shop.</footer>
 <script>
 const store=document.getElementById('store'),category=document.getElementById('category'),brand=document.getElementById('brand');
-document.getElementById('apply').addEventListener('click',()=>{
- let shown=0;
- document.querySelectorAll('.card').forEach(card=>{
-  const match=(store.value==='all'||card.dataset.store===store.value)&&(category.value==='all'||card.dataset.category===category.value)&&(brand.value==='all'||card.dataset.brand===brand.value);
-  card.style.display=match?'':'none';if(match)shown++;
- });
- document.getElementById('count').textContent=shown+' example listing'+(shown===1?'':'s')+' match your filters.';
- document.getElementById('empty').style.display=shown?'none':'block';
-});
-document.querySelectorAll('.demo').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();alert('This is a demo listing. Real retailer links will be added when live deal data is connected.');}));
-</script>
-</body></html>
+document.getElementById('apply').addEventListener('click',()=>{let n=0;document.querySelectorAll('.card').forEach(c=>{const ok=(store.value==='all'||c.dataset.store===store.value)&&(category.value==='all'||c.dataset.category===category.value)&&(brand.value==='all'||c.dataset.brand===brand.value);c.style.display=ok?'':'none';if(ok)n++});document.getElementById('count').textContent=n+' matching retailer listing'+(n===1?'':'s')+' · checked 2 November 2026';document.getElementById('empty').style.display=n?'none':'block'});
+</script></body></html>
